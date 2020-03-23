@@ -1,0 +1,33 @@
+{
+  "name": "DotDev-Neon-Theme",
+  "displayName": "DotDev Neon Theme",
+  "version": "0.1.0",
+  "publisher": "dotdev",
+  "description": "High contrast neon colours on pure black background.",
+  "author": {
+    "name": "Jordan Gerard"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "DotDev Neon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dotdev-neon-theme.json"
+      }
+    ]
+  },
+  "galleryBanner": {
+    "color": "#FFFF00",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.19.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devatdotdev/neon-theme"
+  }
+}

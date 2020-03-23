@@ -1,0 +1,63 @@
+{
+	"name": "snippet-creator",
+	"displayName": "Snippet Creator",
+	"description": "Create snippets quickly. Auto-detects language.",
+	"version": "0.1.0",
+	"author": {
+		"name": "Ryan Olson",
+		"url": "https://github.com/ryanolsonx",
+		"email": "ryolson@me.com"
+	},
+	"publisher": "ryanolsonx",
+	"keywords": [
+		"snippet",
+		"creation"
+	],
+	"engines": {
+		"vscode": "^1.30.0"
+	},
+	"categories": [
+		"Snippets",
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:snippet-creator.createSnippet"
+	],
+	"main": "./src/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "snippet-creator.createSnippet",
+				"title": "Snippet Creator: Create Snippet"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "mocha **/*.test.js"
+	},
+	"dependencies": {
+		"jsonc-parser": "^2.0.3"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^8.10.25",
+		"chai": "^4.2.0",
+		"mocha": "^6.1.4",
+		"prettier": "^1.16.4",
+		"vscode": "^1.1.25"
+	},
+	"homepage": "https://github.com/ryanolsonx/snippet-creator",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ryanolsonx/snippet-creator"
+	},
+	"bugs": {
+		"url": "https://github.com/ryanolsonx/snippet-creator/issues"
+	},
+	"__metadata": {
+		"id": "96509933-ee2a-42b8-ab76-e55b2a7b5107",
+		"publisherId": "d4b4d2bb-55a5-4fbd-b44b-46713208148e",
+		"publisherDisplayName": "Ryan Olson"
+	}
+}
